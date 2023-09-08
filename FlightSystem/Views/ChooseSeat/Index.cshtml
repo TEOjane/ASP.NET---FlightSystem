@@ -1,0 +1,872 @@
+﻿﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Dictionary<string, bool>
+@{
+}
+<div class="plane">
+    <div class="cockpit">
+        <h1>Выберите место:</h1>
+    </div>
+    <div class="exit exit--front fuselage">
+    </div>
+
+<form method="post">
+
+    <ol class="cabin fuselage">
+
+
+
+        <li class="row row--1">
+            <ol class="seats" type="A">
+                    @if (Model["1A"] == false)
+                    {
+                        <li class="booked">
+                            <label for="1A" class="booked">1A</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="1A" value="1A @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="1A">1A</label>
+                        </li>
+                    }
+                    @if (Model["1B"] == false)
+                    {
+                        <li class="booked">
+                            <label for="1B" class="booked">1B</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="1B" value="1B @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="1B">1B</label>
+                        </li>
+                    }
+                    @if (Model["1C"] == false)
+                    {
+                        <li class="booked">
+                            <label for="1C" class="booked">1C</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="1C" value="1C @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="1C">1C</label>
+                        </li>
+                    }
+                    @if (Model["1D"] == false)
+                    {
+                        <li class="booked">
+                            <label for="1D" class="booked">1D</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="1D" value="1D @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="1D">1D</label>
+                        </li>
+                    }
+                    @if (Model["1E"] == false)
+                    {
+                        <li class="booked">
+                            <label for="1E" class="booked">1E</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="1E" value="1E @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="1E">1E</label>
+                        </li>
+                    }
+                    @if (Model["1F"] == false)
+                    {
+                        <li class="booked">
+                            <label for="1F" class="booked">1F</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="1F" value="1F @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="1F">1F</label>
+                        </li>
+                    }
+            </ol>
+        </li>
+        <li class="row row--2">
+            <ol class="seats" type="A">
+                    @if (Model["2A"] == false)
+                    {
+                        <li class="booked">
+                            <label for="2A" class="booked">2A</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="2A" value="2A @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="2A">2A</label>
+                        </li>
+                    }
+                    @if (Model["2B"] == false)
+                    {
+                        <li class="booked">
+                            <label for="2B" class="booked">2B</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="2B" value="2B @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="2B">2B</label>
+                        </li>
+                    }
+                    @if (Model["2C"] == false)
+                    {
+                        <li class="booked">
+                            <label for="2C" class="booked">2C</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="2C" value="2C @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="2C">2C</label>
+                        </li>
+                    }
+                    @if (Model["2D"] == false)
+                    {
+                        <li class="booked">
+                            <label for="2D" class="booked">2D</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="2D" value="2D @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="2D">2D</label>
+                        </li>
+                    }
+                    @if (Model["2E"] == false)
+                    {
+                        <li class="booked">
+                            <label for="2E" class="booked">2E</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="2E" value="2E @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="2E">2E</label>
+                        </li>
+                    }
+                    @if (Model["2F"] == false)
+                    {
+                        <li class="booked">
+                            <label for="2F" class="booked">2F</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="2F" value="2F @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="2F">2F</label>
+                        </li>
+                    }
+            </ol>
+        </li>
+        <li class="row row--3">
+            <ol class="seats" type="A">
+                    @if (Model["3A"] == false)
+                    {
+                        <li class="booked">
+                            <label for="3A" class="booked">3A</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="3A" value="3A @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="3A">3A</label>
+                        </li>
+                    }
+                    @if (Model["3B"] == false)
+                    {
+                        <li class="booked">
+                            <label for="3B" class="booked">3B</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="3B" value="3B @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="3B">3B</label>
+                        </li>
+                    }
+                    @if (Model["3C"] == false)
+                    {
+                        <li class="booked">
+                            <label for="3C" class="booked">3C</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="3C" value="3C @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="3C">3C</label>
+                        </li>
+                    }
+                    @if (Model["3D"] == false)
+                    {
+                        <li class="booked">
+                            <label for="3D" class="booked">3D</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="3D" value="3D @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="3D">3D</label>
+                        </li>
+                    }
+                    @if (Model["3E"] == false)
+                    {
+                        <li class="booked">
+                            <label for="3E" class="booked">3E</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="3E" value="3E @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="3E">3E</label>
+                        </li>
+                    }
+                    @if (Model["3F"] == false)
+                    {
+                        <li class="booked">
+                            <label for="3F" class="booked">3F</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="3F" value="3F @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="3F">3F</label>
+                        </li>
+                    }
+            </ol>
+        </li>
+        <li class="row row--4">
+            <ol class="seats" type="A">
+                    @if (Model["4A"] == false)
+                    {
+                        <li class="booked">
+                            <label for="4A" class="booked">4A</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="4A" value="4A @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="4A">4A</label>
+                        </li>
+                    }
+                    @if (Model["4B"] == false)
+                    {
+                        <li class="booked">
+                            <label for="4B" class="booked">4B</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="4B" value="4B @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="4B">4B</label>
+                        </li>
+                    }
+                    @if (Model["4C"] == false)
+                    {
+                        <li class="booked">
+                            <label for="4C" class="booked">4C</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="4C" value="4C @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="4C">4C</label>
+                        </li>
+                    }
+                    @if (Model["4D"] == false)
+                    {
+                        <li class="booked">
+                            <label for="4D" class="booked">4D</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="4D" value="4D @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="4D">4D</label>
+                        </li>
+                    }
+                    @if (Model["4E"] == false)
+                    {
+                        <li class="booked">
+                            <label for="4E" class="booked">4E</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="4E" value="4E @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="4E">4E</label>
+                        </li>
+                    }
+                    @if (Model["4F"] == false)
+                    {
+                        <li class="booked">
+                            <label for="4F" class="booked">4F</label>
+                        </li>   
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="4F" value="4F @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="4F">4F</label>
+                        </li>
+                    }
+            </ol>
+        </li>
+        <li class="row row--5">
+            <ol class="seats" type="A">
+                    @if (Model["5A"] == false)
+                    {
+                        <li class="booked">
+                            <label for="5A" class="booked">5A</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="5A" value="5A @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="5A">5A</label>
+                        </li>
+                    }
+                    @if (Model["5B"] == false)
+                    {
+                        <li class="booked">
+                            <label for="5B" class="booked">5B</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="5B" value="5B @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="5B">5B</label>
+                        </li>
+                    }
+                    @if (Model["5C"] == false)
+                    {
+                        <li class="booked">
+                            <label for="5C" class="booked">5C</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="5C" value="5C @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="5C">5C</label>
+                        </li>
+                    }
+                    @if (Model["5D"] == false)
+                    {
+                        <li class="booked">
+                            <label for="5D" class="booked">5D</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="5D" value="5D @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="5D">5D</label>
+                        </li>
+                    }
+                    @if (Model["5E"] == false)
+                    {
+                        <li class="booked">
+                            <label for="5E" class="booked">5E</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="5E" value="5E @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="5E">5E</label>
+                        </li>
+                    }
+                    @if (Model["5F"] == false)
+                    {
+                        <li class="booked">
+                            <label for="5F" class="booked">5F</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="5F" value="5F @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="5F">5F</label>
+                        </li>
+                    }
+            </ol>
+        </li>
+        <li class="row row--6">
+            <ol class="seats" type="A">
+                    @if (Model["6A"] == false)
+                    {
+                        <li class="booked">
+                            <label for="6A" class="booked">6A</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="6A" value="6A @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="6A">6A</label>
+                        </li>
+                    }
+                    @if (Model["6B"] == false)
+                    {
+                        <li class="booked">
+                            <label for="6B" class="booked">6B</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="6B" value="6B @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="6B">6B</label>
+                        </li>
+                    }
+                    @if (Model["6C"] == false)
+                    {
+                        <li class="booked">
+                            <label for="6C" class="booked">6C</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="6C" value="6C @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="6C">6C</label>
+                        </li>
+                    }
+                    @if (Model["6D"] == false)
+                    {
+                        <li class="booked">
+                            <label for="6D" class="booked">6D</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="6D" value="6D @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="6D">6D</label>
+                        </li>
+                    }
+                    @if (Model["6E"] == false)
+                    {
+                        <li class="booked">
+                            <label for="6E" class="booked">6E</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="6E" value="6E @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="6E">6E</label>
+                        </li>
+                    }
+                    @if (Model["6F"] == false)
+                    {
+                        <li class="booked">
+                            <label for="6F" class="booked">6F</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="6F" value="6F @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="6F">6F</label>
+                        </li>
+                    }
+            </ol>
+        </li>
+        <li class="row row--7">
+            <ol class="seats" type="A">
+                    @if (Model["7A"] == false)
+                    {
+                        <li class="booked">
+                            <label for="7A" class="booked">7A</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="7A" value="7A @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="7A">7A</label>
+                        </li>
+                    }
+                    @if (Model["7B"] == false)
+                    {
+                        <li class="booked">
+                            <label for="7B" class="booked">7B</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="7B" value="7B @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="7B">7B</label>
+                        </li>
+                    }
+                    @if (Model["7C"] == false)
+                    {
+                        <li class="booked">
+                            <label for="7C" class="booked">7C</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="7C" value="7C @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="7C">7C</label>
+                        </li>
+                    }
+                    @if (Model["7D"] == false)
+                    {
+                        <li class="booked">
+                            <label for="7D" class="booked">7D</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="7D" value="7D @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="7D">7D</label>
+                        </li>
+                    }
+                    @if (Model["7E"] == false)
+                    {
+                        <li class="booked">
+                            <label for="7E" class="booked">7E</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="7E" value="7E @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="7E">7E</label>
+                        </li>
+                    }
+                    @if (Model["7F"] == false)
+                    {
+                        <li class="booked">
+                            <label for="7F" class="booked">7F</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="7F" value="7F @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="7F">7F</label>
+                        </li>
+                    }
+            </ol>
+        </li>
+        <li class="row row--8">
+            <ol class="seats" type="A">
+                    @if (Model["8A"] == false)
+                    {
+                        <li class="booked">
+                            <label for="8A" class="booked">8A</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="8A" value="8A @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="8A">8A</label>
+                        </li>
+                    }
+                    @if (Model["8B"] == false)
+                    {
+                        <li class="booked">
+                            <label for="8B" class="booked">8B</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="8B" value="8B @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="8B">8B</label>
+                        </li>
+                    }
+                    @if (Model["8C"] == false)
+                    {
+                        <li class="booked">
+                            <label for="8C" class="booked">8C</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="8C" value="8C @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="8C">8C</label>
+                        </li>
+                    }
+                    @if (Model["8D"] == false)
+                    {
+                        <li class="booked">
+                            <label for="8D" class="booked">8D</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="8D" value="8D @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="8D">8D</label>
+                        </li>
+                    }
+                    @if (Model["8E"] == false)
+                    {
+                        <li class="booked">
+                            <label for="8E" class="booked">8E</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="8E" value="8E @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="8E">8E</label>
+                        </li>
+                    }
+                    @if (Model["8F"] == false)
+                    {
+                        <li class="booked">
+                            <label for="8F" class="booked">8F</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="8F" value="8F @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="8F">8F</label>
+                        </li>
+                    }
+            </ol>
+        </li>
+        <li class="row row--9">
+            <ol class="seats" type="A">
+                    @if (Model["9A"] == false)
+                    {
+                        <li class="booked">
+                            <label for="9A" class="booked">9A</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="9A" value="9A @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="9A">9A</label>
+                        </li>
+                    }
+                    @if (Model["9B"] == false)
+                    {
+                        <li class="booked">
+                            <label for="9B" class="booked">9B</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="9B" value="9B @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="9B">9B</label>
+                        </li>
+                    }
+                    @if (Model["9C"] == false)
+                    {
+                        <li class="booked">
+                            <label for="9C" class="booked">9C</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="9C" value="9C @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="9C">9C</label>
+                        </li>
+                    }
+                    @if (Model["9D"] == false)
+                    {
+                        <li class="booked">
+                            <label for="9D" class="booked">9D</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="9D" value="9D @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="9D">9D</label>
+                        </li>
+                    }
+                    @if (Model["9E"] == false)
+                    {
+                        <li class="booked">
+                            <label for="9E" class="booked">9E</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="9E" value="9E @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="9E">9E</label>
+                        </li>
+                    }
+                    @if (Model["9F"] == false)
+                    {
+                        <li class="booked">
+                            <label for="9F" class="booked">9F</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="9F" value="9F @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="9F">9F</label>
+                        </li>
+                    }
+            </ol>
+        </li>
+        <li class="row row--10">
+            <ol class="seats" type="A">
+                    @if (Model["10A"] == false)
+                    {
+                        <li class="booked">
+                            <label for="10A" class="booked">10A</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="10A" value="10A @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="10A">10A</label>
+                        </li>
+                    }
+                    @if (Model["10B"] == false)
+                    {
+                        <li class="booked">
+                            <label for="10B" class="booked">10B</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="10B" value="10B @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="10B">10B</label>
+                        </li>
+                    }
+                    @if (Model["10C"] == false)
+                    {
+                        <li class="booked">
+                            <label for="10C" class="booked">10C</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="10C" value="10C @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="10C">10C</label>
+                        </li>
+                    }
+                    @if (Model["10D"] == false)
+                    {
+                        <li class="booked">
+                            <label for="10D" class="booked">10D</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="10D" value="10D @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="10D">10D</label>
+                        </li>
+                    }
+                    @if (Model["10E"] == false)
+                    {
+                        <li class="booked">
+                            <label for="10E" class="booked">10E</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="10E" value="10E @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="10E">10E</label>
+                        </li>
+                    }
+                    @if (Model["10F"] == false)
+                    {
+                        <li class="booked">
+                            <label for="10F" class="booked">10F</label>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="seat">
+                            <input type="radio" name="rdbtn" id="10F" value="10F @ViewBag.Ticket.idClient @ViewBag.Ticket.idFlight" />
+                            <label for="10F">10F</label>
+                        </li>
+                    }
+            </ol>
+        </li>
+    </ol>
+    <div class="exit exit--back fuselage">
+
+   
+    </div>
+
+
+     <br />
+
+        <div>
+            <p> Дополнительные услуги </p>
+
+            <div>
+                <input type="checkbox" id="pets" name="pets">
+                <label for="pets">Перевозка животных</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="baggage" name="baggage">
+                <label for="baggage">+ 5 кг багажа</label>
+            </div>
+        </div>
+
+        <button type="submit" name="searchButton" asp-area="" asp-controller="ChooseSeat" asp-action="AddSeat">Получить билет</button>
+
+         
+    </form>
+</div>
+
+
+
+
+

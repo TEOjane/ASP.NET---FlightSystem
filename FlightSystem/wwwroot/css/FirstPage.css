@@ -1,0 +1,183 @@
+.parent {
+    text-align: center;
+
+}
+
+.child {
+    display: inline-block;
+
+}
+
+
+
+.home {
+    margin: 0;
+    background-image: url(../img/mountainfone.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.bn31 {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1em;
+    color: #ffffff;
+
+    margin: 0 0 15px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    height: 50px;
+    font-size: 1.4em;
+    padding: 15px;
+    position: relative;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.bn31:hover {
+    background: #4d0ecb67;
+    color: #fff;
+}
+
+   
+
+/* ----- Destinations Form ----- */
+.destinations-form {
+  display: block;
+  max-width: 770px;
+  margin: 0 auto;
+  position: relative;
+}
+.destinations-form .input-line {
+  display: block;
+  width: 100%;
+}
+.destinations-form .input-line .form-input {
+  width: 100%;
+  height: 60px;
+  border: 0;
+  padding: 0 240px 0 30px;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.04em;
+  border-radius: 5px;
+  color: #2c3e50;
+}
+.destinations-form .input-line .form-input:focus, .destinations-form .input-line .form-input.has-value {
+  background: #fafafa;
+}
+@media (max-width: 768px) {
+  .destinations-form .input-line .form-input {
+    padding-right: 190px;
+  }
+}
+.destinations-form .form-submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+@media (max-width: 768px) {
+  .destinations-form .form-submit {
+    padding: 0 15px !important;
+  }
+}
+
+
+/* ----------------- 9.3. Sections ----------------- */
+/* -------- Section Title -------- */
+.section {
+  margin-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .section {
+    margin-bottom: 50px;
+  }
+}
+
+.section-title {
+  text-align: center;
+  display: block;
+  margin-bottom: 74px;
+}
+.section-title .title {
+  line-height: 1em;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.04em;
+  color: #343435;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+.section-title .sub-title {
+  font-size: 16px;
+  line-height: 1.2em;
+  color: #717171;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .section-title {
+    margin-bottom: 45px;
+  }
+  .section-title .title {
+    font-size: 26px;
+  }
+}
+
+/* -------- Intro Section -------- */
+.hero-box {
+
+  
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 150px 0;
+}
+    .hero-box .hero-text h1,
+    .hero-box .hero-text p {
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1em;
+        color: #ffffff;
+    }
+
+    .hero-box .hero-text h1 {
+        font-family: "Raleway", sans-serif;
+        letter-spacing: 0.08em;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 1em;
+        margin: 0 0 15px;
+    }
+
+    .hero-box .hero-text p {
+        letter-spacing: 0.04em;
+        line-height: 1em;
+        font-size: 30px;
+        margin: 0 0 80px;
+    }
+
+@media (max-width: 768px) {
+    .hero-box {
+        padding: 200px 0;
+    }
+
+        .hero-box .hero-text h1 {
+            font-size: 36px;
+        }
+
+        .hero-box .hero-text p {
+            font-size: 20px;
+        }
+}
+

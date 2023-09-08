@@ -1,0 +1,103 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<br />
+
+<form method="get">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>1. Выберите дату вылета</th>
+                <th>2. Выберите город вылета</th>
+                <th>3. Выберите город прилета</th>
+                <th>4. Поиск!</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr>
+                <td>
+                    <input type="date" class="form-control" name="selectedToDate" value="" />
+                </td>
+               
+
+                <td>
+                    <select name="selectedArrivalPlace">
+                        <option>Откуда</option>
+                        @foreach (string city in ViewBag.ArrivalCities)
+                        {
+                            <option>@city</option>
+                        }
+                    </select>
+                </td>
+
+                <td>
+                    <select name="selectedDeparturePlace">
+                        <option>Куда</option>
+                        @foreach (string city in ViewBag.DepartureCities)
+                        {
+                            <option>@city</option>
+                        }
+                    </select>
+                </td>
+
+                <td>
+                    <button type="submit" name="searchButton" asp-area="" asp-controller="Client" asp-action="SearchFlight">Поиск</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</form>
+
+<h2> Список билетов</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Дата вылета</th>
+            <th>Дата прилета</th>
+            <th>Город вылета</th>
+            <th>Город прилета</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @if (ViewBag.Flights.Count != 0)
+        {
+            foreach (Flight flight in ViewBag.Flights)
+            {
+                <tr>
+                    <td>@flight.ArrivalData</td>
+                    <td>@flight.DepartureData</td>
+                    <td>@flight.ArrivalPlace</td>
+                    <td>@flight.DeparturePlace</td>
+
+                    <td>
+                        @if (!flight.isSoldOut)
+                        {
+                            <a href="/BuyTicket/Index/@flight.Id">Купить</a>
+                        }
+                        else
+
+                        {
+                            <p>Билеты распроданы</p>
+                        }
+                        <!--<a class="nav-link text-dark" asp-area="" asp-controller="Client" asp-action="BuyTicket">Купить билет</a>-->
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td>Не найдено нужных рейсов</td>
+            </tr>
+        }
+    </tbody>
+</table>
